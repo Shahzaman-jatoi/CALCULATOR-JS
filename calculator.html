@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculator using HTML/CSS AND JS </title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="input">
+            <input id="display" type="text">
+        </div>
+        <div class="allbtns">
+            <div class="col-1">
+                <div class="row">
+                    <button onclick="calculatingFun('AC')" class="btn-r1">AC</button>
+                    <button onclick="calculatingFun('%')" class="btn-r1">%</button>
+                    <button onclick="calculatingFun('()')" class="btn-r1">( )</button>
+                </div>
+                <div class="row">
+                    <button onclick="calculatingFun('7')" class="btn-rr">7</button>
+                    <button onclick="calculatingFun('8')" class="btn-rr">8</button>
+                    <button onclick="calculatingFun('9')" class="btn-rr">9</button>
+                </div>
+                <div class="row">
+                    <button onclick="calculatingFun('4')" class="btn-rr">4</button>
+                    <button onclick="calculatingFun('5')" class="btn-rr">5</button>
+                    <button onclick="calculatingFun('6')" class="btn-rr">6</button>
+                </div>
+                <div class="row">
+                    <button onclick="calculatingFun('1')" class="btn-rr">1</button>
+                    <button onclick="calculatingFun('2')" class="btn-rr">2</button>
+                    <button onclick="calculatingFun('3')" class="btn-rr">3</button>
+                </div>
+                <div class="row">
+                    <button onclick="calculatingFun('0')" class="btn-rr">0</button>
+                    <button onclick="calculatingFun('.')" class="btn-rr">.</button>
+                    <button onclick="calculatingFun('back')" class="btn-cancel"><i class="fa-regular fa-rectangle-xmark"></i></button>
+                </div>
+            </div>
+            <div class="col-1">
+                <button onclick="calculatingFun('/')" class="btn-special"><i class="fa-solid fa-divide"></i></button>
+                <button onclick="calculatingFun('*')" class="btn-special"><i class="fa-solid fa-xmark"></i></button>
+                <button onclick="calculatingFun('+')" class="btn-special"><i class="fa-solid fa-plus"></i></button>
+                <button onclick="calculatingFun('-')" class="btn-special"><i class="fa-solid fa-minus"></i></button>
+                <button onclick="calculatingFun('=')" class="btn-special"><i class="fa-solid fa-equals"></i></button> 
+            </div>  
+        </div>
+    </div>
+        
+        
+        <script src="https://kit.fontawesome.com/0c582bdaae.js" crossorigin="anonymous"></script>
+        <script src="/calculator.js"></script>
+    </body>
+    </html>
